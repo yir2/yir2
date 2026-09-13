@@ -1,16 +1,44 @@
-## Hi there 👋
+<h1 align="center">徐亦燃</h1>
 
-<!--
-**yir2/yir2** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<p align="center">用声音让模型更像人</p>
 
-Here are some ideas to get you started:
+你好，我是徐亦燃，在北京声屿科技做音频算法工程师。日常主要碰语音合成和声音建模，希望模型说出来的话不是“标准但僵硬”，而是有呼吸、停顿和情绪。我也很在意成本：如果一个方案跑起来太贵，就很难真正落进产品里。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+| 当前关注 | 日常实践 |
+| --- | --- |
+| 让合成语音更自然，像真人聊天 | 整理语料、训练模型、反复试听失败案例 |
+| 更小的模型也能保留好音质 | 做蒸馏、量化、端侧推理的实验 |
+| 声音细节：气口、停顿、语气词 | 给数据加细粒度标注，设计主观听感测试 |
+
+**常用工具**
+
+<kbd>Python</kbd> <kbd>PyTorch</kbd> <kbd>ESPnet</kbd> <kbd>Librosa</kbd> <kbd>ffmpeg</kbd> <kbd>Weights & Biases</kbd>
+
+## 最近在做的两件小事
+
+### 探索一：让停顿像人
+
+人说话时的呼吸、犹豫和小停顿，比“字音准”更影响听感。很多合成语音听起来“熟的假”，就是因为节奏太均匀。
+
+- 我在给语音大模型补呼吸和静音标注；
+- 下一步准备做小规模主观听感对比，看哪些停顿模式最接近真人。
+
+### 探索二：把模型做“瘦”
+
+大模型音质好，但部署成本高。我想试试更小的模型能不能在关键能力上不输太多。
+
+- 目前在看蒸馏和量化两个方向；
+- 下一步会在几个基线上做对比，记录合成音质和推理开销。
+
+## 一点背景
+
+我是声学爱好者，几年前从音频信号处理慢慢转到语音合成。喜欢拆解一段声音为什么“像人”或“不像人”，也喜欢把想法快速做成能听的原型。对我来说，声音不只是技术问题，还带着日常生活的质感。
+
+<details>
+<summary>工作之外</summary>
+
+周末喜欢背着录音笔到处录环境声：地铁站的报站、雨后的屋檐、胡同里的鸟叫。最近在学木吉他，偶尔也会用自己调的小模型把录到的声音变成白噪音或氛围音，放着当背景。
+
+</details>
+
+在 GitHub 上，我是 yir2。
